@@ -1,0 +1,11 @@
+# Package dependencies
+node_modules
+
+# Local env variables
+.env
+
+# Yarn
+yarn-*
+
+# Build folder
+build
