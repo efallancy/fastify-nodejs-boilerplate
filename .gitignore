@@ -9,3 +9,6 @@ yarn-*
 
 # Build folder
 build
+
+# System specific
+.DS_Store

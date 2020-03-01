@@ -6,9 +6,10 @@
   "author": "Emmanuel Fallancy <emmanuel.fallancy@gmail.com> (https://emmanuel.dev)",
   "scripts": {
     "build": "tsc",
-    "format": "pretty-quick '**/*.{ts,js}'",
+    "format": "prettier --write '**/*.{ts,js}'",
     "start": "yarn build && node build/index.js",
-    "start:dev": "nodemon --watch src -e ts --exec 'ts-node src/index.ts'"
+    "start:dev": "nodemon --watch src -e ts --exec 'ts-node src/index.ts'",
+    "test": "jest"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.0",
@@ -19,6 +20,7 @@
     "uuid": "^3.4.0"
   },
   "devDependencies": {
+    "@types/hapi__joi": "^16.0.12",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "@types/supertest": "^2.0.8",

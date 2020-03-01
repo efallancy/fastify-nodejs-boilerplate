@@ -4,6 +4,7 @@ import helmet from 'fastify-helmet';
 
 import config from './config';
 import health from './routes/health';
+import greetings from './routes/greetings';
 
 export const configureServer = (): FastifyInstance => {
   const server = fastify({ logger: config.logger, genReqId: config.genReqId });
@@ -14,6 +15,6 @@ export const configureServer = (): FastifyInstance => {
 
   // Register/mount route(s)
   server.register(health);
-
+  server.register(greetings, { prefix: '/v1' });
   return server;
 };
