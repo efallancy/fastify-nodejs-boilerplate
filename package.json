@@ -14,7 +14,7 @@
   "dependencies": {
     "@hapi/joi": "^17.1.0",
     "@types/uuid": "^3.4.7",
-    "fastify": "^2.12.0",
+    "fastify": "^2.15.1",
     "fastify-cors": "^3.0.1",
     "fastify-helmet": "^3.0.2",
     "uuid": "^3.4.0"
